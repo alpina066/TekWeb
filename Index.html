@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <about>
+        <!--About-->
+        <div>
+            <h3><a href="#foot">About</a></h3>
+        </div>
+    </about>
+    <header>
+        <!--Title-->
+        <div>
+            <h1 style="color: #ffca0c">CALCULATOR</h1>
+        </div>
+    </header>
+    <main>
+    <!--Volume-->
+    <div id="volume">
+        <h2>3D Shape Volume Calculator</h2>
+        <form>
+            <label for="shapeselect">Select a 3D Shape</label>
+            <select id="shapeselect">
+                <option value="cube">Cube</option>
+                <option value="cuboid">Cuboid</option>
+                <option value="sphere">Sphere</option>
+                <option value="square-pyramid">Square Pyramid</option>
+            </select>
+            <div id="cube-cal" style="display: block;">
+                <label for="cubeside">Side length</label>
+                <input type="number" id="cubeside">
+            </div>
+            <div id="cuboid-cal" style="display: none;">
+                <label for="cuboidlength">Cuboid Length</label>
+                <input type="number" id="cuboidlength"><br>
+                <label for="cuboidwidth">Cuboid Width</label>
+                <input type="number" id="cuboidwidth"><br>
+                <label for="cuboidheight">Cuboid Height</label>
+                <input type="number" id="cuboidheight"><br>
+            </div>
+            <div id="sphere-cal" style="display: none;">
+                <label for="sphererad">Sphere Radius</label>
+                <input type="number" id="sphererad">
+            </div>
+            <div id="square-pyramid-cal" style="display: none;">
+                <label for="squarepyedge">Base Edge</label>
+                <input type="number" id="squarepyedge"><br>
+                <label for="squarepyheight">Square Pyramid Height</label>
+                <input type="number" id="squarepyheight"><br>
+            </div>
+
+            <button type="button" onclick="calVolume()">Calculate</button>
+        </form>
+        <p>Result: <span id="volumeresult"></span></p>
+    </div>
+
+        <!--Fibonacci-->
+    <div id="fibo">
+        <h2>Fibonacci Sequence</h2>
+        <form>
+            <label for="fiboinput">Enter the nth Number</label>
+            <input type="number" id="fiboinput" min="0">
+            <button type="button" onclick="calfibo()">Calculate</button>
+        </form>
+        <p>Result: <span id="fiboresult"></span></p>
+    </div>
+    </main>
+<br>
+<script src="java.js"></script>
+    <footer id="foot">
+        <p>By Gede Alpina Dendra</p><br>
+        <p>2215101066</p><br>
+        <p>IKI CLASS</p><br>
+        <a href="https://github.com/alpina066">See moe about my project</a>
+    </footer>
+</body>
+</html>
